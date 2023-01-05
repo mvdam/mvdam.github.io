@@ -59,8 +59,8 @@ a, a:link, a:hover { color: #fff; text-decoration: none; }
     text-align: center;
 }
 
-#page header hgroup h1,
-#page header hgroup h2 {
+#page h1,
+#page h2 {
     font-family: 'Helvetica Nue';
     font-size: 30px;
     font-weight: 200;
@@ -68,7 +68,7 @@ a, a:link, a:hover { color: #fff; text-decoration: none; }
     color: #232323;
 }
 
-#page header hgroup h2 {
+#page h2 {
     font-size: 22px;
     color: #bdbdbd;
     margin: 5px 0 0 0;
@@ -215,3 +215,8 @@ a, a:link, a:hover { color: #fff; text-decoration: none; }
 #page #menu li.item_1 a { background-image: url(../img/menu_1.png); }
 #page #menu li.item_2 a { background-image: url(../img/menu_2.png); }
 #page #menu li.item_3 a { background-image: url(../img/menu_3.png); }
+
+#page article h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
