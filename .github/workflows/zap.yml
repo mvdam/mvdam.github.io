@@ -8,10 +8,9 @@ on:
         default: "https://www.mvdam.dev"
 
 jobs:
-  docker:
+  zap_scan:
     runs-on: ubuntu-latest
-    name: Docker build
-
+    name: Scan the webapplication
     steps:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.13.0
