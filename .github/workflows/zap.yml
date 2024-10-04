@@ -1,7 +1,11 @@
 name: ZAP
-
 on:
   workflow_dispatch:
+    inputs:
+      url:
+        description: "URL to scan"
+        required: true
+        default: "https://www.mvdam.dev"
 
 jobs:
   docker:
@@ -12,4 +16,4 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.13.0
         with:
-          target: "https://www.mvdam.dev"
+          target: ${{ github.event.inputs.url }}
